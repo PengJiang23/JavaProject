@@ -80,4 +80,19 @@ public class DishController {
         dishService.deleteBatch(ids);
         return Result.success();
     }
+
+
+    /**
+     * todo 还没搞懂
+     * @param categoryId
+     * @return
+     */
+    @GetMapping("/list")
+    @ApiOperation("根据分类id查询菜品")
+
+    public Result<List<Dish>> searchByCategoryId(Long categoryId){
+        List<Dish> list = dishService.list(categoryId);
+        return Result.success(list);
+    }
+
 }

@@ -11,6 +11,8 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.List;
+
 
 @Mapper
 public interface DishMapper {
@@ -32,4 +34,10 @@ public interface DishMapper {
 
     @Select("select * from dish where id = #{id}")
     Dish searchById(Long id);
+
+
+    @Select("select count(id) from dish where category_id = #{id}")
+    Integer countByCategoryId(Long id);
+
+    List<Dish> list(Dish dish);
 }

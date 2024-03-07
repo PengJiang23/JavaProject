@@ -24,11 +24,14 @@
     <select id="queryCategoryPage" resultType="com.sky.entity.Category">
     select * from category
     <where>
-        <if test="name != null and name != ' '">
+        <if test="name != null and name != ''">
             and name like concat('%', #{name},'%')
         </if>
+        <if test="type != null">
+            and type = #{type}
+        </if>
     </where>
-    order by sort desc
+    order by sort asc, create_time desc
     </select>
 
     <select id="queryByType" resultType="com.sky.entity.Category">

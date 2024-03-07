@@ -9,5 +9,5 @@ sky:
   alioss:
     endpoint: oss-cn-hangzhou.aliyuncs.com
     access-key-id: LTAI5tMmNzb4otFhhTTsHsto
-    access-key-secret: 4OqbKCvbyTWSsiMJNpCDbyjOWGKpf8
+    access-key-secret: 
     bucket-name: cq15

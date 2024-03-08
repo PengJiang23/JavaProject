@@ -8,6 +8,6 @@ sky:
     password: 123456
   alioss:
     endpoint: oss-cn-hangzhou.aliyuncs.com
-    access-key-id: LTAI5tMmNzb4otFhhTTsHsto
-    access-key-secret: 
+    access-key-id: LTAI5tKMYXB2aN7kS2mmfkX6
+    access-key-secret: s4kccoO0R0EEkWxlgfxdwX1ULr3Pp2
     bucket-name: cq15

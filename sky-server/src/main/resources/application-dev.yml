@@ -8,6 +8,11 @@ sky:
     password: 123456
   alioss:
     endpoint: oss-cn-hangzhou.aliyuncs.com
-    access-key-id: LTAI5tMmNzb4otFhhTTsHsto
-    access-key-secret: 
+    access-key-id: LTAI5tKMYXB2aN7kS2mmfkX6
+    access-key-secret: s4kccoO0R0EEkWxlgfxdwX1ULr3Pp2
     bucket-name: cq15
+  redis:
+    host: localhost
+    port: 6379
+    password: 123456
+    database: 0

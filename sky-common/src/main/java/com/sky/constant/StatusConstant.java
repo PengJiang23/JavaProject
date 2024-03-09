@@ -10,4 +10,9 @@ public class StatusConstant {
 
     //禁用
     public static final Integer DISABLE = 0;
+
+
+    //redis中的存储店铺状态的key
+    public static final String KEY = "SHOP_STATUS";
+
 }

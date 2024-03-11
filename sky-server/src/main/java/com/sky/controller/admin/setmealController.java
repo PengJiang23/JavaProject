@@ -48,6 +48,7 @@ public class setmealController {
 
     @PostMapping("/status/{status}")
     @ApiOperation("套餐状态设置")
+    @CacheEvict(cacheNames = "setmealCache", key = "#id")
     public Result setMealStatus(@PathVariable Integer status, Long id){
 
         setMealService.setStatus(status,id);

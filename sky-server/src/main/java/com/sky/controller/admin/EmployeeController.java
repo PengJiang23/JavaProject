@@ -97,8 +97,6 @@ public class EmployeeController {
          *  性别：0/1
          */
         log.info("新增员工：{}", employeeDTO);
-        String idNumber = employeeDTO.getIdNumber();
-        String phone = employeeDTO.getPhone();
         employeeService.save(employeeDTO);
 
 

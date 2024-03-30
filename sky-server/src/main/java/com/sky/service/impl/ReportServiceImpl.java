@@ -1,10 +1,8 @@
 package com.sky.service.impl;
 
-import com.fasterxml.jackson.databind.annotation.JsonAppend;
 import com.sky.dto.GoodsSalesDTO;
 import com.sky.entity.Orders;
 import com.sky.mapper.OrderMapper;
-import com.sky.mapper.ReportMapper;
 import com.sky.mapper.UserMapper;
 import com.sky.service.ReportService;
 import com.sky.service.WorkspaceService;
@@ -32,8 +30,6 @@ import java.util.stream.Collectors;
 @Service
 public class ReportServiceImpl implements ReportService {
 
-    @Autowired
-    ReportMapper reportMapper;
 
     @Autowired
     OrderMapper orderMapper;

@@ -10,22 +10,27 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>sky-common</artifactId>
     <dependencies>
+<!--        bean的一些模板函数需要-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
+<!--        处理json对象，微信支付/httpclient中的jsonobject，序列/反-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
         </dependency>
+<!--        apache中的一些字符串、数值、时间、反射等操作-->
         <dependency>
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>
         </dependency>
+<!--        处理json数据，java对象序列化/反json-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-json</artifactId>
         </dependency>
+<!--        jwt生成需要用到的-->
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt</artifactId>
@@ -40,6 +45,8 @@
             <groupId>com.aliyun.oss</groupId>
             <artifactId>aliyun-sdk-oss</artifactId>
         </dependency>
+
+<!--        java对象与xml的转化-->
         <dependency>
             <groupId>javax.xml.bind</groupId>
             <artifactId>jaxb-api</artifactId>
